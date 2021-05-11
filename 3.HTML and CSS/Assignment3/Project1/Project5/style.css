@@ -1,0 +1,310 @@
+/* ---------------------------------
+1. PRIMARY STYLES
+--------------------------------- */
+
+html { font-size: 100%; overflow-x: hidden; width: 100%; margin: 0px; padding: 0px;}
+
+body { font-size: 14px; font-family: 'Open Sans', sans-serif; width: 100%; height: 100%; margin: 0; font-weight: 400;
+         word-wrap: break-word; overflow-x: hidden; color: #333; }
+
+
+
+h1, h2, h3, .font-beyond { font-family:'Beyond The Mountains','Nothing You Could Do', sans-serif; }
+
+p { line-height: 1.7; font-size: 1.5em; font-weight: 400; color: #555; }
+
+h1 { font-size: 7.5em; line-height: 1.4; }
+
+h2 { font-size: 4em; line-height: 1.4; }
+
+h3 { font-size: 3em; }
+
+h4 {   font-size: 1.8em; }
+
+h5 { font-size: 1.3em; }
+
+h6 {  font-size: .95em; letter-spacing: 1px; }
+
+a, button { display: inline-block; text-decoration: none; color: inherit; line-height: 1.3; -webkit-transition: all .10s ease-in-out; transition: all .10s ease-in-out;}
+
+a:focus, a:active, a:hover,
+button:focus, button:active, button:hover,
+a b.light-color:hover { text-decoration: none; color: #EF0031;}
+
+b {  font-weight: 700; }
+
+img { width: 100%;}
+
+li { list-style: none; display: inline-block; line-height: 1.6; font-size: 1.1em; }
+
+span { display: inline-block; }
+
+button { outline: 0; border: 0; background: none; cursor: pointer; }
+
+.icon { font-size: 1.1em;display: inline-block;line-height: inherit; }
+
+
+/* ---------------------------------
+3. HEADER
+--------------------------------- */
+
+header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 1;
+        padding: 25px 0;
+        font-weight: 600;
+        color: #fff;
+     
+}
+
+header .logo {
+        float: left;
+        height: 70px;
+}
+
+header .logo img {
+        height: 100%;
+        width: auto;
+}
+
+header ul.main-menu > li > a {
+        height: 100%;
+        line-height: 70px;
+        padding: 0px 15px;
+}
+
+
+
+section {
+        padding: 100px 0 70px;
+}
+
+.heading {
+        position: relative;
+        text-align: center;
+        margin-bottom: 70px;
+}
+
+.heading-img {
+        height: auto;
+        width: 40px;
+        margin-bottom: 20px;
+}
+
+
+/*ICONS*/
+
+.icon-gradient{ 
+display: block; 
+height: 80px; 
+width: 80px;  
+margin-left:90px;
+ }
+
+
+
+/* ALIGNMENT */
+
+.float-left {float: left !important;}
+
+.float-right { float: right !important;}
+
+.center-text { text-align: center!important; }
+
+.left-text { text-align: left !important; }
+
+.right-text { text-align: right !important;}
+
+
+
+
+
+
+
+/* MENU-BORDER */
+
+.brdr-b-primary{ border-bottom: 2px solid #EF0031; }
+
+.food-menu.active{
+ opacity: 0; 
+display: block!important; 
+animation: full-opacity-anim .3s forwards ;
+}
+
+
+/*SELECTION*/
+
+ul.selecton{ text-align: center;  font-size: 1.2em;  }
+
+ul.selecton li > a{ padding: 15px 30px;   }
+
+ul.selecton li:hover a,
+ul.selecton li a.active{ 
+border-radius: 3px 3px 0 0;
+ background: #EF0031; 
+color: #FFFFFF;  }
+
+
+@keyframes full-opacity-anim{
+        100%{ opacity: 1; }
+}
+
+
+
+
+.color-light{ color: #cccccc; }
+
+.semi-black{ color: #666666; }
+
+
+
+.section1{
+background-image:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url(img/bg.jpg);
+height:800px;
+position:relative;
+margin-top:0 ;
+}
+.div1{
+margin-top:17%;
+color:white;
+}
+.section3{
+color:white;
+position:relative;
+background-image:linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.9)),url(img/bg-15.jpg);
+background-repeat:no-repeat; 
+background-size: cover; 
+position: relative; 
+z-index: 1;
+}
+.btn1{
+border: 1px solid #DC143C;
+padding:15px 30px 15px 30px;
+color:#DC143C;
+background-color:transparent;
+color:#fff;
+}
+.btn1:hover{
+color:#fff;
+background-color:#DC143C;
+}
+.a1{
+color:#DC143C;
+}
+.a1:hover{
+color:#fff;
+}
+.menu_pic_left{
+height:90px;
+width:90px;
+float:left;
+margin:20px;
+}
+.menu_pic_right{
+height:90px;
+width:90px;
+float:right;
+}
+.link{
+text-decoration:none;
+font-size:16px;
+font-family: mountainsre;
+color:white;
+text-align:right;
+margin:20px 15px 15px 20px;
+}
+
+.mb-10{
+margin:10px;
+}
+.pr-70{
+padding-right:70px;}
+
+.mb-10 {
+        margin-bottom: 10px !important;
+}
+.color-primary {
+        color: #EF0031;
+}
+.mb-30{
+margin-bottom:30px;
+}
+.mt-5{
+margin-top:5px;
+}
+.mt-5{
+margin-top:5px;
+}
+.mt-20{
+margin-top:20px;
+}
+.pb-50{
+padding-bottom:50px;}
+.pt-70{
+padding-top:70px;
+}
+.font-9 { font-size: .9em; }
+.mt-50 {
+margin-top:50px;
+}
+
+.heading1{
+margin-top:30px;
+margin-bottom: 0;
+}
+
+.footer_area {
+  background: #000;
+  height:20vh;
+  margin-bottom:0;
+  margin-left:0px;
+  padding-top:40px;
+  margin-top:5%;
+ }
+
+
+.ab_widget p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  margin-bottom: 30px; }
+  .ab_widget p a {
+    color: #fa333f; }
+  .ab_widget p + p {
+    margin-bottom: 0px; }
+
+.social_widget{
+  
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  margin: 0 0 0 16%;
+   }
+
+.social_widget .list li {
+  padding-right:30px;
+ display: inline-block;
+
+  }
+
+  .social_widget .list li a {
+    color: #cccccc;
+    font-size: 25px;
+    transition: all 300ms linear 0s; 
+ }
+  
+  .social_widget .list li:hover a {
+    color: #fa333f; }
+
+
+.center-text { text-align: center!important; }
+
+.title1{
+float:left;
+margin:3px 0 0 20px;
+
+}

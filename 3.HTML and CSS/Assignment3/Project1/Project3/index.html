@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Including Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Survey Form</h1>
+    </div>
+    <div class="container">
+        <form action="#">
+            <br/>
+            <label for="name">Name</label><br/>
+            <input type="text" name="name" id="name" placeholder="Enter you name" required>
+            <br/>
+            <label for="email">Email</label><br/>
+            <input type="email" name="email" id="email" placeholder="Enter you email" required>
+            <br/>
+            <label for="age">Age(optional)</label><br/>
+            <input type="number" name="age" id="age" placeholder="Enter you age" min="1" max="100" step="1">
+            <br/>
+            <label for="city">City</label>
+            <input type="text" name="City" id="city" placeholder="Enter you city">
+            <br/>
+            <label for="gender">Gender</label><br/>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label><br/>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <br/><br/>
+            <label for="lang">Language Known</label>
+            <div class="see">
+              <select name="lang" class="select1">
+                <option value="Telugu">Select an Option</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Urdu">Urdu</option>
+                <option value="Punjabi">Punjabi</option>
+                <option value="Tamil">Tamil</option>
+                <option value="English">English</option>
+                <option value="Japanese">Japanese</option>
+                <option value="Espanol">Espanol</option>
+              </select>
+            </div>
+            <br/>
+            <label for="">Programming Languages</label>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">C Language</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">Python</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">Java</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">Ruby</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">HTML</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">JavaScript</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">C++</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">C#</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">PHP</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">SQL</label>
+            </div><div class="checkbox">
+                <label><input type="checkbox" value="">Swift</label>
+            </div>
+             <br/> 
+            <button class="button">Submit</button>
+                
+
+        </form>
+    </div>
+</body>
+</html>
