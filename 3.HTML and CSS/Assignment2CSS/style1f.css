@@ -1,0 +1,6 @@
+table, th, td{
+    border:solid 1px green;
+}
+th{
+    background-color: green;
+}
