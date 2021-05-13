@@ -10,5 +10,5 @@ Cloud Native - Full Stack Development - MEAN Stack - April 2021 Batch
     ES6 & TypeScript
     NodeJS
     Angular
-    Docker
-    Case Study
+    AWS Serverless
+    Case Study - Online Hotel Management System
