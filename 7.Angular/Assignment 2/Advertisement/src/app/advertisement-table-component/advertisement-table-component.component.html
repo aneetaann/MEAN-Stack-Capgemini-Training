@@ -1,0 +1,30 @@
+<h2>List of Advertisements</h2>
+<br>
+<form action="">
+    <label for="search">Search</label> &nbsp;
+    <input type="text" name="search" id="search" placeholder="Search by Title or Name.."  [(ngModel)]="searchString" required>
+</form>
+<br>
+<table>
+   <tr>
+       <th>No.</th>
+       <th>Title</th>
+       <th>Name</th>
+       <th>Category</th>
+       <th>Description</th>
+       <th>Actions</th>
+   </tr>
+   <tr *ngFor="let ad of ads | searchFilter : searchString ; let i= index ">
+        <td> {{i}}</td>
+        <td> {{ad.title}} </td>
+        <td> {{ad.name}} </td>
+        <td> {{ad.category}} </td>
+        <td> {{ad.description}} </td>
+        <td>
+            <button (click)="editAd(ad)">Edit</button>
+            <button (click)="deleteAd(ad)">Delete</button>
+        </td>
+   </tr>
+</table>
+
+

@@ -1,0 +1,15 @@
+<header *ngIf="show">
+  <nav class="navbar ">
+    <ul class="nav navbar-nav">
+      <li>
+        <a *ngFor="let route of routes" [routerLink]="route.url">{{
+          route.linkName
+        }}</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<!--<h1>Admin</h1>-->
+
+<router-outlet></router-outlet>

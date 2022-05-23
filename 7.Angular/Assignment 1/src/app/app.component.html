@@ -1,0 +1,30 @@
+<h1>Restaurent App</h1>
+
+<header>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header"></div>
+
+      <ul class="nav navbar-nav">
+        <li>
+          <a
+            (click)="route.displayRoute()"
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Admin</a
+          >
+        </li>
+        <li><a routerLink="/user" routerLinkActive="active">User</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<app-admin #route></app-admin>
+<!--<h1>Restaurent App</h1>
+<a *ngFor="let route of routes" [routerLink]="route.url">{{
+  route.linkName
+}}</a>-->
+
+<router-outlet></router-outlet>
